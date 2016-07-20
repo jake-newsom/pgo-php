@@ -47,7 +47,7 @@ PGO-PHP is very much a new project and as such is light in features. Currently w
  * PTC Authentication
  * Token Caching (to speed up subsequent requests when auth servers are busy)
  * Profile Display
- 
+
 Please note the Pokemon Go servers are currently under severe load and often struggle during busy periods. Until proper Error Handling is added, you will come across some PHP errors. Please bare with me, or even better help add better Error Reporting where appropriate.
 
 ## To-Do
@@ -64,6 +64,8 @@ The priorities I will be working on include:
 I encourage and look forward to your submissions to help push this project further. If you have any ideas, suggestions or comments please do let me know or feel free to submit a pull request with new features / improvements.
 
 Please note: The purpose of PGO-PHP is to enhance the Pokemon Go experience, and as such we won't accept any PRs or include code which is designed to negatively impact the playing experience of Pokemon Go for others.
+
+**Please submit all Pull Requests to the develop branch.** This will help keep the master branch clean and any merge conflicts etc can be resolved on develop before going onto master.
 
 
 ## Thanks
