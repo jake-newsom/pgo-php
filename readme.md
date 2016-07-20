@@ -1,5 +1,7 @@
 # PGO-PHP - A PHP based Pokemon Go API Client (WIP)
 
+**Please submit all Pull Requests to the develop branch.**
+
 PGO-PHP is a [Laravel](http://www.laravel.com) based PHP client built ontop of the Protocol Buffer used for Pokemon Go. The aim of PGO-PHP is to build a feature-rich library for PHP developers to make great apps based on Pokemon Go, as well as a fully featured RESTful HTTP API to power applications produced in other languages.
 
 ## Installation
@@ -64,8 +66,6 @@ The priorities I will be working on include:
 I encourage and look forward to your submissions to help push this project further. If you have any ideas, suggestions or comments please do let me know or feel free to submit a pull request with new features / improvements.
 
 Please note: The purpose of PGO-PHP is to enhance the Pokemon Go experience, and as such we won't accept any PRs or include code which is designed to negatively impact the playing experience of Pokemon Go for others.
-
-**Please submit all Pull Requests to the develop branch.** This will help keep the master branch clean and any merge conflicts etc can be resolved on develop before going onto master.
 
 
 ## Thanks
