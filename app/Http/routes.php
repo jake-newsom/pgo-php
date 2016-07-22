@@ -16,9 +16,9 @@ Route::get('/', function (){
 });
 
 //list routes for api calls here
-$app->group(['prefix'=>'v1','namespace'=>'App\Http\Controllers'],function($app){
+/*$app->group(['prefix'=>'v1','namespace'=>'App\Http\Controllers'],function($app){
 	$app->get('trainer','TrainerController@index');
 
-});
+});*/
 
 ?>
