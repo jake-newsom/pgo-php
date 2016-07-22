@@ -8,6 +8,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesResources;
 
 use App\Models\Http\Client;
+use App\Models\Trainer;
 
 class TrainerController extends BaseController
 {
