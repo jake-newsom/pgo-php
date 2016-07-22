@@ -11,7 +11,7 @@
 |
 */
 
-$app->get('/', function () use ($app) {
+Route::get('/', function (){
     return "Test";
 });
 
