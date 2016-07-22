@@ -36,10 +36,10 @@ class Client {
         return unpack('Q', pack('d', $float))[1];
     }
 
-    public function getLocation()
+    public function getLocation($loc)
     {
         $geocode = new Geocode();
-        $location = $geocode->get(env('LOCATION'));
+        $location = $geocode->get($loc);
 
         $latitude = $this->f2i($location->getLatitude());
         $longitude = $this->f2i($location->getLongitude());

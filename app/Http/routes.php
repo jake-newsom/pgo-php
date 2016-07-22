@@ -18,7 +18,11 @@ Route::get('/', function (){
 //list routes for api calls here
 Route::group(['prefix'=>'v1'],function(){
 	Route::get('trainer','TrainerController@index');
+
+	Route::post('mapcell','MapController@cell');
 });
+
+
 /*$app->group(['prefix'=>'v1','namespace'=>'App\Http\Controllers'],function($app){
 	$app->get('trainer','TrainerController@index');
 
