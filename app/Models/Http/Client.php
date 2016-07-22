@@ -98,11 +98,11 @@ class Client {
 
         $req->setRequestsList($requests);
 
-        $location = $this->getLocation();
+        /*$location = $this->getLocation();
 
         $req->setLatitude($location['latitude']);
         $req->setLongitude($location['longitude']);
-        $req->setAltitude(0);
+        $req->setAltitude(0);*/
 
         $req->setUnknown12(989);
 

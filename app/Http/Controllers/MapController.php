@@ -15,8 +15,6 @@ class MapController extends BaseController
 {
     use AuthorizesRequests, AuthorizesResources, DispatchesJobs, ValidatesRequests;
 
-function create(Request $request) { $address = $request->input('address'); }
-
     public function cell(Request $request){
 
         $location = $request->input("location");

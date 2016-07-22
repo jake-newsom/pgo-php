@@ -21,7 +21,7 @@ class TrainerController extends BaseController
 
         $client = new Client;
         $accessToken = $client->accessToken;
-        $apiUrl = $client->apiEndpoint;
+        //$apiUrl = $client->apiEndpoint;
 
 		$trainer = new Trainer($client);
         $profile = $trainer->profile();
