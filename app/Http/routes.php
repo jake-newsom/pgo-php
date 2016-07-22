@@ -10,3 +10,6 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+$app->group(['prefix'=>'v1','namespace'=>'App\Http\Controllers'],function($app){
+	$app->get('trainer','TrainerController@index');
+}
