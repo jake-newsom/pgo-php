@@ -10,11 +10,15 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-$app->get('/',function() use ($app){
-	return $app->version();
+
+$app->get('/', function () use ($app) {
+    return $app->version();
 });
 
 //list routes for api calls here
 $app->group(['prefix'=>'v1','namespace'=>'App\Http\Controllers'],function($app){
 	$app->get('trainer','TrainerController@index');
-}
+
+});
+
+?>
