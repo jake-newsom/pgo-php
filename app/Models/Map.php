@@ -9,7 +9,7 @@ use Protobuf\PokemonGo\RequestEnvelop\Requests;
 use Protobuf\PokemonGo\ResponseEnvelop\ProfilePayload;
 
 
-class Trainer {
+class Map {
 
     protected $client;
 
