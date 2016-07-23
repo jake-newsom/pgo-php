@@ -31,8 +31,9 @@ class MapController extends BaseController
         $req = new Requests;
         $req->setType(2);
         $requestCollection->add($req);
+        $response = $this->client->request($requestCollection);
 
-        $latlng = $client->getLocation($location);
+        //$latlng = $client->getLocation($location);
         //$response = $this->client->request($requestCollection);
         //$accessToken = $client->accessToken;
         //$apiUrl = $client->apiEndpoint;
@@ -41,9 +42,8 @@ class MapController extends BaseController
         //$profile = $trainer->profile();
 
     	//update this once you figure out what code populates the trainer profile
-    	//$trainer = array("testuser"=>"testvalue");
+    	$map = array("testuser"=>"testvalue","response"=>$response);
 
-        $map = array("coords"=>$latlng);
     	return response()->json($map);
     }
 }
