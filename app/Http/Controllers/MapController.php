@@ -10,6 +10,8 @@ use Illuminate\Foundation\Auth\Access\AuthorizesResources;
 use App\Models\Http\Client;
 use App\Models\Mapobject;
 //use App\Models\Trainer;
+use Protobuf\PokemonGo\RequestEnvelop\Requests;
+use Protobuf\PokemonGo\ResponseEnvelop\ProfilePayload;
 
 class MapController extends BaseController
 {
@@ -23,7 +25,15 @@ class MapController extends BaseController
         $username = env('AUTH_USERNAME');
 
         $client = new Client;
+
+        $requestCollection = new MessageCollection;
+
+        $req = new Requests;
+        $req->setType(2);
+        $requestCollection->add($req);
+
         $latlng = $client->getLocation($location);
+        //$response = $this->client->request($requestCollection);
         //$accessToken = $client->accessToken;
         //$apiUrl = $client->apiEndpoint;
 
