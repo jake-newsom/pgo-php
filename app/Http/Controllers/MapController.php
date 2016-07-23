@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -17,9 +18,9 @@ class MapController extends BaseController
 {
     use AuthorizesRequests, AuthorizesResources, DispatchesJobs, ValidatesRequests;
 
-    public function cell(){
+    public function cell(Request $request){
 
-        $location = Input::get("location","monroe park richmond va");
+        $location = $request->input("location");
 
         $service = env('AUTH_SERVICE');
         $username = env('AUTH_USERNAME');
