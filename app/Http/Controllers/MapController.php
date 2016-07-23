@@ -26,10 +26,10 @@ class MapController extends BaseController
         $username = env('AUTH_USERNAME');
 
         $client = new Client;
-        $map = new Map($client);
-        $mapinfo = $map->listObjects();
+        //$map = new Map($client);
+        //$mapinfo = $map->listObjects();
 
-        //$latlng = $client->getLocation($location);
+        $latlng = $client->getLocation($location);
         //$response = $this->client->request($requestCollection);
         //$accessToken = $client->accessToken;
         //$apiUrl = $client->apiEndpoint;
@@ -38,7 +38,7 @@ class MapController extends BaseController
         //$profile = $trainer->profile();
 
     	//update this once you figure out what code populates the trainer profile
-    	$map = array("objects"=>$mapinfo);
+    	$map = array("coords"=>$latlng);
 
     	return response()->json($map);
     }
